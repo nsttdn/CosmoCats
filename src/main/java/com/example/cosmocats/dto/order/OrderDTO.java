@@ -1,4 +1,4 @@
-package com.example.cosmocats.dto;
+package com.example.cosmocats.dto.order;
 
 import java.math.BigDecimal;
 import java.util.List;
