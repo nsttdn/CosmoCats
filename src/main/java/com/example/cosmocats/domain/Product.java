@@ -1,12 +1,21 @@
 package com.example.cosmocats.domain;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import java.math.BigDecimal;
+import lombok.Builder;
+import lombok.Value;
 
+@Value
+@Builder
 public class Product {
-    private Long id;
-    private String name;
-    private String description;
-    private BigDecimal price;
-    private Category category;
+    Long id;
+    String name;
+    String description;
+    BigDecimal price;
+    Category category;
+
 }
 

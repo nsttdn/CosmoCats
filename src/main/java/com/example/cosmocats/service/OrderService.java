@@ -1,5 +1,5 @@
 package com.example.cosmocats.service;
 
-public class OrderService {
+public interface OrderService {
 
 }

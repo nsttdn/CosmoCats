@@ -26,6 +26,9 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok:1.18.28'
 	annotationProcessor 'org.projectlombok:lombok:1.18.28'
 	implementation 'org.mapstruct:mapstruct:1.5.5.Final'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.hibernate:hibernate-core:5.6.10.Final'  // Або останню стабільну версію Hibernate
+	implementation 'org.springframework.boot:spring-boot-starter-data-rest'  // Для автоматичної генерації REST API
 	annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.5.Final'
 }
 
