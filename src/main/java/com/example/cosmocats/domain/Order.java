@@ -1,4 +1,4 @@
-package com.example.cosmocats.domain.model;
+package com.example.cosmocats.domain;
 
 import java.math.BigDecimal;
 import java.util.List;

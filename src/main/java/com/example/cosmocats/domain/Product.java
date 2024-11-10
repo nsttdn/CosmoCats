@@ -1,8 +1,4 @@
-package com.example.cosmocats.domain.model;
-
-import jakarta.validation.constraints.DecimalMin;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
+package com.example.cosmocats.domain;
 
 import java.math.BigDecimal;
 
