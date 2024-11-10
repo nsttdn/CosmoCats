@@ -1,5 +1,9 @@
 package com.example.cosmocats.mapper;
 
-public class OrderMapper {
+import com.example.cosmocats.domain.Order;
+import com.example.cosmocats.dto.OrderDTO;
 
+public interface OrderMapper {
+    OrderDTO toDTO(Order order);
+    Order toEntity(OrderDTO orderDTO);
 }
