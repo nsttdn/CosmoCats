@@ -1,4 +1,4 @@
-package com.example.cosmocats.domain.model;
+package com.example.cosmocats.domain;
 
 public class Category {
     private Long id;

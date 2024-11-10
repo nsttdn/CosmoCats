@@ -1,8 +1,4 @@
-package com.example.cosmocats.domain.model;
-
-import jakarta.validation.constraints.NotNull;
-import lombok.Builder;
-import org.springframework.beans.factory.annotation.Value;
+package com.example.cosmocats.domain;
 
 import java.math.BigDecimal;
 import java.util.List;
