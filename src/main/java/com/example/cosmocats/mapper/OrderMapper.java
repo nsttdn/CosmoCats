@@ -1,7 +1,7 @@
 package com.example.cosmocats.mapper;
 
 import com.example.cosmocats.domain.Order;
-import com.example.cosmocats.dto.OrderDTO;
+import com.example.cosmocats.dto.order.OrderDTO;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

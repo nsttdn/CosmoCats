@@ -1,6 +1,6 @@
 package com.example.cosmocats.service;
 
-import com.example.cosmocats.dto.OrderDTO;
+import com.example.cosmocats.dto.order.OrderDTO;
 import com.example.cosmocats.mapper.OrderMapper;
 import com.example.cosmocats.repository.OrderRepository;
 import java.util.List;
