@@ -9,7 +9,7 @@ version = '0.0.1-SNAPSHOT'
 
 java {
 	toolchain {
-		languageVersion = JavaLanguageVersion.of(21)
+		languageVersion = JavaLanguageVersion.of(19)
 	}
 }
 
@@ -36,8 +36,13 @@ dependencies {
 	implementation 'org.mapstruct:mapstruct:1.5.5.Final'
 	annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.5.Final'
 
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'jakarta.validation:jakarta.validation-api:2.0.2'
+	implementation 'org.hibernate.validator:hibernate-validator:6.2.0.Final'
+
+
 	// Hibernate ORM
-	implementation 'org.hibernate:hibernate-core:5.6.10.Final' // Або оновіть до останньої стабільної версії
+	//implementation 'org.hibernate:hibernate-core:5.6.10.Final'
 }
 
 
