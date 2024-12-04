@@ -11,12 +11,10 @@ import lombok.extern.jackson.Jacksonized;
 @Builder
 @Jacksonized
 public class OrderRequestDTO {
-
   @NotNull(message = "Entries cannot be null")
-  List<OrderDTO> entries; // List of order entries
+  List<OrderDTO> entries;
 
   @NotNull(message = "Total price cannot be null")
   @Min(value = 0)
-  Double totalPrice; // Total price after any discounts or fees
-
+  Double totalPrice;
 }

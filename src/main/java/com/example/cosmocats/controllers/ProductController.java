@@ -17,35 +17,30 @@ public class ProductController {
   @Autowired
   private ProductService productService;
 
-  // Створення нового продукту
   @PostMapping
   public ResponseEntity<ProductDTO> createProduct(@Valid @RequestBody ProductDTO productDTO) {
     ProductDTO createdProduct = productService.createProduct(productDTO);
     return ResponseEntity.status(201).body(createdProduct);
   }
 
-  // Отримання всіх продуктів
   @GetMapping
   public ResponseEntity<List<ProductDTO>> getAllProducts() {
     List<ProductDTO> products = productService.getAllProducts();
     return ResponseEntity.ok(products);
   }
 
-  // Отримання продукту за ID
   @GetMapping("/{id}")
   public ResponseEntity<ProductDTO> getProductById(@PathVariable Long id) {
     ProductDTO product = productService.getProductById(id);
     return product != null ? ResponseEntity.ok(product) : ResponseEntity.notFound().build();
   }
 
-  // Оновлення продукту
   @PutMapping("/{id}")
   public ResponseEntity<ProductDTO> updateProduct(@PathVariable Long id, @Valid @RequestBody ProductDTO productDTO) {
     ProductDTO updatedProduct = productService.updateProduct(id, productDTO);
     return updatedProduct != null ? ResponseEntity.ok(updatedProduct) : ResponseEntity.notFound().build();
   }
 
-  // Видалення продукту
   @DeleteMapping("/{id}")
   public ResponseEntity<Void> deleteProduct(@PathVariable Long id) {
     boolean isDeleted = productService.deleteProduct(id);

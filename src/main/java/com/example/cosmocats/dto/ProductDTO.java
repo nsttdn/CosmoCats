@@ -13,7 +13,5 @@ public class ProductDTO {
   private String name;
   private String description;
   private BigDecimal price;
-  private Long categoryId; // Слід передати лише ідентифікатор категорії, а не саму категорію
-
-  // Getters and setters
+  private Long categoryId; 
 }

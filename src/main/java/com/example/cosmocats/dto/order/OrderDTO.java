@@ -11,9 +11,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class OrderDTO {
   private Long id;
-  private List<Long> productIds; // Список ідентифікаторів продуктів замість повного об'єкта Product
+  private List<Long> productIds;
   private BigDecimal totalPrice;
   private String status;
-
-  // Getters and setters
 }

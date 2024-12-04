@@ -17,5 +17,4 @@ public class Order {
     List<Product> products;
     BigDecimal totalPrice;
     String status;
-
 }

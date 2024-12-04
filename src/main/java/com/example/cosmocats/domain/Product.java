@@ -6,10 +6,11 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import java.math.BigDecimal;
 import lombok.Builder;
+import lombok.Data;
 import lombok.Value;
 
-@Value
-@Builder()
+@Data
+@Builder
 public class Product {
     Long id;
     String name;
