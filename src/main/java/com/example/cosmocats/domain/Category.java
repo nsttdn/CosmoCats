@@ -1,11 +1,16 @@
 package com.example.cosmocats.domain;
 
-import lombok.Builder;
-import lombok.Value;
+import jakarta.persistence.*;
+import lombok.*;
 
-@Value
 @Builder(toBuilder = true)
+@Entity
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor
+@Table(name = "categories")
 public class Category {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
     String name;
 }

@@ -1,19 +1,24 @@
 package com.example.cosmocats.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+
 import java.math.BigDecimal;
 import java.util.List;
-import lombok.Builder;
-import lombok.Value;
+
+import lombok.*;
 
 
-@Value
+@Data
+@AllArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Builder(toBuilder = true)
+@Entity
+@Table(name = "orders")
 public class Order {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
+    @OneToMany
     List<Product> products;
     BigDecimal totalPrice;
     String status;

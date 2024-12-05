@@ -9,16 +9,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CategoryRepository extends JpaRepository<Category, Long> {
-
-  // Метод для знаходження продукту за його ID
-  Optional<Category> findById(Long id);
-
-  // Метод для отримання всіх продуктів
-  List<Category> findAll();
-
-  // Метод для видалення продукту за ID
-  void deleteById(Long id);
-
-  // Метод для перевірки наявності продукту за його назвою
   boolean existsByName(String name);
 }

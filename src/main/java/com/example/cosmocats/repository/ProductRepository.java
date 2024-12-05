@@ -8,16 +8,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {
-
-  // Метод для знаходження продукту за його ID
-  Optional<Product> findById(Long id);
-
-  // Метод для отримання всіх продуктів
-  List<Product> findAll();
-
-  // Метод для видалення продукту за ID
-  void deleteById(Long id);
-
-  // Метод для перевірки наявності продукту за його назвою
   boolean existsByName(String name);
 }
